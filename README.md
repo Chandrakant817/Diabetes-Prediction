@@ -5,7 +5,7 @@ Diabetes prediction using machine learning (Classification Use Case)
 
 #### Framework used: Flask
 
-#### IDE used: Pycharm
+#### IDE used: PyCharm
 
 ### Step by Step Process 
 
