@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Predict Your chances for Diabetes</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <p> <label for="pregnancies">pregnancies</label>
+            <input type="number" name="pregnancies" id="pregnancies" placeholder="no of pregnancies"> </p><br>
+            <p> <label for="DiabetesPedigreeFunction">DiabetesPedigreeFunction</label>
+            <input type="number" name="DiabetesPedigreeFunction" id="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" step="0.01"> </p> <br>
+            <p> <label for="Age">Age</label>
+            <input type="number" name="Age" id="Age" placeholder="Age"> </p> <br>
+            <p> <label for="insulin">insulin</label>
+            <input type="number" name="insulin" id="insulin" placeholder="insulin" step="0.01" > </p> <br>
+            <p> <label for="Glucose">Glucose</label>
+            <input type="number" name="Glucose" id="Glucose" placeholder="Glucose" step="0.01" > </p> <br>
+            <p> <label for="BP">BP</label>
+            <input type="number" name="BP" id="BP"placeholder="BP" step="0.01" > </p> <br>
+            <p> <label for="BMI">BMI</label>
+            <input type="number" name="BMI" id="BMI" placeholder="BMI" step="0.01" > </p> <br>
+            <p> <label for="pregnancies">skin_thickness</label>
+            <input type="number" name="skin_thickness" id="skin_thickness" placeholder="skin_thickness" step="0.01" > </p> <br>
+            <p> <input type="submit" value="Predict"> </p>
+        </form>
+    </div>
+</div>
+{% endblock %}
