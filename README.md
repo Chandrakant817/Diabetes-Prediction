@@ -1,6 +1,8 @@
 # Diabetes-Prediction
 Diabetes prediction using machine learning (Classification Use Case)
 
+![image](https://user-images.githubusercontent.com/69152112/219029628-7e5e1937-96ad-47cf-8b22-5f268c8a5727.png)
+
 #### Programming Language Used: Python
 
 #### Framework used: Flask
